@@ -1,0 +1,3 @@
+.section h2{font-size:clamp(1.5rem, 2vw + .5rem, 2rem)}
+.lead{font-size:1.05rem}
+.hidden{display:none !important}

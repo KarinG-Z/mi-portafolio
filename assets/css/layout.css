@@ -1,0 +1,42 @@
+.site-header{padding:1rem 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-weight:800;font-size:1.2rem;color:var(--text)}
+.logo span{color:var(--accent)}
+.nav__list{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+.nav__list a{padding:.5rem .75rem;border-radius:999px}
+.nav__list a:hover{background:#1a1e27;text-decoration:none}
+.nav__toggle{display:none;background:transparent;border:1px solid var(--muted);border-radius:8px;padding:.35rem .6rem;color:var(--text)}
+
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;margin-top:2rem;align-items:center}
+.hero__img img{border-radius:var(--radius);box-shadow:0 10px 20px rgba(0,0,0,.35)}
+.hero__cta{display:flex;gap:1rem;margin-top:1rem}
+
+.grid{display:grid;gap:1.25rem}
+.cards{grid-template-columns:repeat(3,1fr)}
+.card{background:#0f121a;border:1px solid #1b2030;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.card__body{padding:1rem}
+.card__actions{display:flex;gap:.5rem;margin-top:.5rem}
+
+.tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.tag{background:#1a1e27;border:1px solid #293141;border-radius:999px;padding:.35rem .7rem}
+
+.form{display:grid;gap:1rem;max-width:560px}
+.form__row{display:grid;gap:.35rem}
+input,textarea{background:#0b0e14;border:1px solid #19202c;border-radius:12px;color:var(--text);padding:.75rem 1rem}
+input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.error{color:#ff8e8e;height:1.2em}
+.form__ok{color:var(--accent);margin-top:.5rem}
+
+.site-footer{border-top:1px solid #1b2030;padding:2rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.social{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 600px){
+  .nav__toggle{display:block}
+  .nav__list{display:none;position:absolute;right:1rem;top:60px;background:#0f121a;border:1px solid #1b2030;border-radius:12px;padding:.5rem;flex-direction:column}
+  .nav__list.show{display:flex}
+  .cards{grid-template-columns:1fr}
+}
