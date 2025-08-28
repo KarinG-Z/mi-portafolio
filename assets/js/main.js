@@ -1,4 +1,4 @@
-// Navegación móvil y validación de formulario — JS simple y comentado
+// Navegación móvil y validación de formulario
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -13,7 +13,7 @@ if (menuBtn && menu) {
   });
 }
 
-// Validación básica del formulario (demo; no envía datos)
+// Validación básica del formulario (el demo; no envía datos)
 const form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', (e) => {
